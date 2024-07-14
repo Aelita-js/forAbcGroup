@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+#app {
+    width: 320px;
+    min-height: 80vh;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 1em;
+    font-size: 1em;
+    margin-top: 1em;
+    cursor: pointer;
+    width: 100%; /* Изменено на 100% ширины родительского элемента */
+}
+
+button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.progressBar {
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.progressBarInner {
+    height: 20px;
+    width: 0;
+    background-color: #4caf50;
+    border-radius: 5px;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.questionImage {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.questionImage img {
+    max-width: 100%;
+}
+
+.answers {
+    list-style: none;
+    padding: 0;
+}
+
+.answers li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+}
+
+#footerText {
+    max-height: 2em;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+footer:hover #footerText {
+    max-height: 100%;
+}
