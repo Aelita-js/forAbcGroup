@@ -1,6 +1,6 @@
 const renderLoadingPage = () => {
     const app = document.getElementById('app');
     app.innerHTML = `
-        <h1>Loading...</h1>
+        <h4>Обработка результатов</h4>
     `;
 };

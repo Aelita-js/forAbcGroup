@@ -1,8 +1,8 @@
 const state = {
-    currentPage: 'home',
-    currentQuestion: 0,
-    answers: [],
-    questions: [
+    currentPage: 'home',    // Текущая страница (app - home, test, loading или results)
+    currentQuestion: 0,     // Индекс текущего вопроса
+    answers: [],            // Массив для хранения ответов на вопросы
+    questions: [            // Массив вопросов: question (вопрос), options (варианты ответов как массив), image (картина для вопроса)
         { 
             question: "Ваш пол:", 
             options: ["Мужчина", "Женщина"] 
@@ -51,5 +51,5 @@ const state = {
             options: ["34", "36", "53", "44", "66", "42"]
         }
     ],
-    apiData: null
+    apiData: null              // Данные, полученные от API, изначально пусто
 };

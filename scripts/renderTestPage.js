@@ -21,7 +21,6 @@ const renderTestPage = (state, renderPage) => {
         <button id="nextQuestion" disabled>Далее</button>
     `;
 
-    // Добавляем изображение, если оно есть для текущего вопроса
     if (currentQuestion.image) {
         questionContent = `
             <div class="progressBar">
@@ -46,6 +45,7 @@ const renderTestPage = (state, renderPage) => {
             <button id="nextQuestion" disabled>Далее</button>
         `
     }
+    
 
     app.innerHTML = questionContent;
 
