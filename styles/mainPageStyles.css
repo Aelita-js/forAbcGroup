@@ -1,0 +1,357 @@
+/* ! Header Styles */
+
+#header {
+    position: relative;
+    height: 50px;
+    padding: 0 20px;
+    background-color: #181818;
+    display: flex;
+    align-items: center;
+}
+
+.headerMenu {
+    width: 25px;
+    cursor: pointer;
+}
+
+.headerLogo {
+    width: 50px;
+    margin: 0 7px;
+}
+
+.headerTitle {
+    font-weight: 200;
+    font-size: 12px;
+    font-family: "Yeseva One", serif;
+    color: #FFC700;
+    text-transform: uppercase;
+}
+
+
+/* ! Burger Menu Styles */
+#burgerMenu {
+    width: 320px;
+    height: 100vh;
+    padding: 0 40px 50px 20px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    background-color: #181818;
+    transition: left 0.3s ease-out;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+#burgerMenu.active {
+    display: block;
+}
+
+.burgerMenu button {
+    width: 30px;
+    /* margin-right: 20px; */
+    margin-top: 0;
+    border: none;
+    background: none;
+    align-self: flex-end;
+}
+
+.burgerMenu {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Roboto", serif;
+    font-weight: lighter;
+}
+
+.burgerMenu ul {
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+.burgerMenu ul li {
+    cursor: pointer;
+}
+
+.burgerMenu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+}
+
+
+
+/* ! Intro Styles */
+#intro {
+    height: 520px;
+    padding: 30px 20px;
+    background-image: url('../assets/bgImage.png');
+    z-index: -1;
+}
+
+.introTitle h4 {
+    color: #fff;
+    font-family: "PT Serif", serif;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+}
+
+.introTitle h1 {
+    margin: 20px 10px 0;
+    text-align: center;
+    font-family: "Yeseva One", serif;
+    font-weight: normal;
+    font-size: 30px;
+    color: #FFC700;
+    text-transform: uppercase;
+}
+
+.introImage {
+    height: 130px;
+    position: relative;
+    z-index: 2;
+}
+
+.introImage img {
+    width: 200px;
+    position: relative;
+    top: -30px;
+    left: 47%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.introButton {
+    position: relative;
+    display: block;
+    width: 190px;
+    height: 40px;
+    margin: 15px auto;
+    padding: 0;
+    font-family: "Merriweather", serif;
+    background-color: #FFC700;
+    font-size: 14px;
+    color: #0D0C11;
+    border: none;
+    border-radius: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.introText p {
+    color: #fff;
+    font-family: "PT Serif", serif;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.introText span {
+    color: #FFC700;
+}
+
+.introArrow {
+    height: 30px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.introArrow p {
+    color: #fff;
+    font-size: 8px;
+    font-weight: normal;
+    font-family: "PT serif", serif;
+}
+
+.introArrow img {
+    width: 16px;
+}
+
+.introArrow p a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* ! About Section Styles */
+
+#about {
+    background-image: url('../assets/aboutBg.png');
+    height: 340px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.aboutText {
+    text-align: center;
+    color: #fff;
+    font-family: "Yeseva One", serif;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    line-height: 25px;
+    font-weight: lighter;
+}
+
+.aboutQuote {
+    width: 23px;
+}
+
+.aboutQuoteLeft {
+    align-self: flex-start;
+}
+
+.aboutQuoteRight {
+    align-self: flex-end;
+}
+
+
+/* ! Example Section Styles */
+
+#info {
+    height: 500px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infoText {
+    font-size: 16px;
+    font-family: "PT serif", serif;
+    letter-spacing: 0.5px;
+}
+
+.infoText span {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.infoText span b {
+    text-transform: lowercase;
+}
+
+.infoImage {
+    width: 230px;
+}
+
+.infoButton {
+    width: 200px;
+    height: 40px;
+    padding: 0;
+    font-family: "Merriweather", serif;
+    background-color: #FFC700;
+    font-size: 14px;
+    color: #0D0C11;
+    border: none;
+    border-radius: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+
+
+/* ! Footer Styles */
+
+#footer {
+    width: 100%;
+    height: 530px;
+    padding: 60px 10px 20px;
+    background-image: url('../assets/bgImage.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footerTitle {
+    position: relative;
+    width: 260px;
+    font-size: 15px;
+    font-family: "Merriweather", serif;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    z-index: 2;
+    text-align: left;
+}
+
+.footerTitle span {
+    color: #FFC700;
+    font-weight: bold;
+}
+
+.footerText {
+    position: relative;
+    width: 300px;
+    height: 220px;
+    padding: 20px 10px;
+    letter-spacing: 1px;
+    line-height: 23px;
+    background-color: #F3F3F2;
+    opacity: 80%;
+    border-radius: 20px;
+    font-family: "Merriweather", serif;
+    color: #181818;
+    z-index: 2;
+}
+
+.footerButton {
+    width: 200px;
+    height: 46px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255, 0, 0, 0);
+    border: solid #fff;
+    color: #fff;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-family: "Merriweather", serif;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.footerImages {
+    position: relative;
+    top: -200px;
+    z-index: 1;
+}
+
+.footerImage1 {
+    position: absolute;
+    top: -210px;
+    right: -10px;
+}
+
+.footerImage2 {
+    position: absolute;
+    top: 30px;
+    left: -10px;
+}
+
+.footerCopyright {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 10px;
+    font-family: "Roboto", serif;
+    font-weight: normal;
+    color: #fff;
+    opacity: 0.5;
+}
